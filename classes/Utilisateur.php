@@ -23,7 +23,8 @@ class Utilisateur
    public function setEmaile($emaile){
     $this->emaile=$emaile;
    }
-   public function __tostring(){
+   // __tostring
+   public function afficherDetails(){
     return "le nom est {$this->nom}, l'email est {$this->emaile} ";
    }
    
