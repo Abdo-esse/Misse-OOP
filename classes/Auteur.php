@@ -21,4 +21,8 @@ class Ateur extends Utilisateur
     public function afficherAuteurs(){
         return parent::afficherDetails() ." de biographie {$this->biographie}";
     }
+
+    public function creerArticle($titre,$contenu){
+        return new Article($titre,$contenu);
+    }
 }
