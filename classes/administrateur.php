@@ -20,4 +20,7 @@ class Administrateur extends Utilisateur
    public function afficherAdministrateur(){
     return parent::afficherDetails() ." de biographie {$this->role}";
 }
+// 
+public function supprimerArticl()
+  return "l'article a ete suppremer"
 }
