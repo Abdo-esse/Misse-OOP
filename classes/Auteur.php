@@ -1,5 +1,5 @@
 <?php 
-
+require 'Utilisateur.php';
 class Ateur extends Utilisateur
 {
     private $biographie;
@@ -19,6 +19,6 @@ class Ateur extends Utilisateur
     }
     // __tostring auteur
     public function afficherAuteurs(){
-        return parent::afficherDetails() .'de biographie {$this->biographie}';
+        return parent::afficherDetails() ." de biographie {$this->biographie}";
     }
 }
